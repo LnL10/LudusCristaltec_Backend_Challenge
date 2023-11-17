@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "76c51a9a-e74e-482c-96fe-b4a2cad30d86",
+		"name": "CAT API PROXY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30841628"
+	},
+	"item": [
+		{
+			"name": "/api/v1/tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/cats/filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/cats/filter?tag=cute&omit=2&total=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"cats",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "cute"
+						},
+						{
+							"key": "omit",
+							"value": "2"
+						},
+						{
+							"key": "total",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/v1/cats/match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/cats/match?string=br",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"cats",
+						"match"
+					],
+					"query": [
+						{
+							"key": "string",
+							"value": "br"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,6 @@
+FROM node:18.14.2
+WORKDIR /cat
+COPY . .
+RUN npm install
+EXPOSE 3000
+CMD ["sh", "-c", "npm test && node server.js"]
