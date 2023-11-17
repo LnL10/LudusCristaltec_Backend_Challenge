@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  db:
+    build: ./db
+    restart: always
+  web:
+    build: ./api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    restart: on-failure
