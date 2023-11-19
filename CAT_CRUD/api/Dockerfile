@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm install 
 COPY . .
 EXPOSE 3000 
-CMD ["sh", "-c", "sleep 10 && npx sequelize db:migrate && (npm test || true) && node server.js"]
+CMD ["sh", "-c", "sleep 10 && npx sequelize db:migrate && (npm test || true) && node ./services/server.js"]

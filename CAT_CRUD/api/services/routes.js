@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const catController = require('./controllers/catController');
+const catController = require('../controllers/catController');
 
 
 //Rota para ver tags mais comuns

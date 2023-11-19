@@ -1,5 +1,5 @@
 const request = require('supertest');
-const {server,app} = require('../server'); 
+const {server,app} = require('../services/server'); 
 
 describe('ENDPOINTS TEST', () => {
   it('Return an array of tags /api/v1/tags', async () => {
